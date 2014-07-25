@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>579</width>
+    <height>516</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>579</width>
+    <height>418</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Chromatic Hulk</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../icons/the_cake_is_a_lie.png</normaloff>../../../icons/the_cake_is_a_lie.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="4">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="styleSheet">
+       <string/>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="Recipe">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="accessibleName">
+        <string>Recipe</string>
+       </property>
+       <attribute name="title">
+        <string>&amp;Inventory</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>Description:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="2">
+         <widget class="QLineEdit" name="descEdit">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>Quantity:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4" colspan="2">
+         <widget class="QDoubleSpinBox" name="quanSpin"/>
+        </item>
+        <item row="0" column="6" colspan="2">
+         <widget class="QComboBox" name="myCombo">
+          <item>
+           <property name="text">
+            <string>Cups</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Fluid Ounces</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ounces</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Whole</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cloves</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Grams</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Kilograms</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Teaspoons</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Tablespoons</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Pints</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Liters</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Mililiters</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font/>
+          </property>
+          <property name="text">
+           <string>Current Inventory:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2" colspan="3">
+         <widget class="QPushButton" name="addInvBtn">
+          <property name="text">
+           <string>&amp;Add</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5" colspan="2">
+         <widget class="QPushButton" name="previewBtn">
+          <property name="text">
+           <string>&amp;Preview</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="7">
+         <widget class="QPushButton" name="clearBtn">
+          <property name="text">
+           <string>&amp;Clear FIelds</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="8">
+         <widget class="QListWidget" name="list_Inv"/>
+        </item>
+        <item row="3" column="5" colspan="3">
+         <widget class="QPushButton" name="removeInvBtn">
+          <property name="text">
+           <string>&amp;Remove Selected</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0" colspan="6">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Tip: You can Click on an Item to edit it. Make sure to Save Changes!</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="6" colspan="2">
+         <widget class="QPushButton" name="saveInvBtn">
+          <property name="text">
+           <string>&amp;Save Changes</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>&amp;Filter</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0" rowspan="2" colspan="7">
+         <widget class="QLabel" name="label_3">
+          <property name="font">
+           <font/>
+          </property>
+          <property name="styleSheet">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Recipe List:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4" colspan="4">
+         <widget class="QLineEdit" name="searchBox"/>
+        </item>
+        <item row="1" column="8">
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>Search Title</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="9">
+         <widget class="QListWidget" name="recList"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>Difficulty:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1" colspan="3">
+         <widget class="QComboBox" name="difficultyCombo">
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Easy</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Medium</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Hard</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Very Hard</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="3" column="5" colspan="2">
+         <widget class="QCheckBox" name="currentInvCB">
+          <property name="text">
+           <string>Current Inventory</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="7" colspan="2">
+         <widget class="QPushButton" name="addRecBtn">
+          <property name="text">
+           <string>A&amp;dd Recipe</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0" colspan="2">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>Cook Time:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QSpinBox" name="tSpinBox">
+          <property name="toolTip">
+           <string>Ready in under X amount of minutes.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3" colspan="2">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>mins</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="5" colspan="2">
+         <widget class="QCheckBox" name="myfaveCB">
+          <property name="text">
+           <string>My Favorites</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="7" colspan="2">
+         <widget class="QPushButton" name="viewBtn">
+          <property name="text">
+           <string>&amp;View Selected</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>Calories:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <widget class="QSpinBox" name="calsBox"/>
+        </item>
+        <item row="5" column="5" colspan="2">
+         <widget class="QCheckBox" name="topratedCB">
+          <property name="text">
+           <string>Top Rated</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="7" colspan="2">
+         <widget class="QPushButton" name="applyFilterBtn">
+          <property name="text">
+           <string>&amp;Apply Filters</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>Servings:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="2">
+         <widget class="QSpinBox" name="servsBox"/>
+        </item>
+        <item row="6" column="7" colspan="2">
+         <widget class="QPushButton" name="removeFilterBtn">
+          <property name="text">
+           <string>&amp;Remove Filters</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>&amp;Tools</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="btconvunits">
+          <property name="toolTip">
+           <string>Click to convert</string>
+          </property>
+          <property name="text">
+           <string>&amp;Convert Units</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Status:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="connectedLabel">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>414</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="3">
+     <widget class="QPushButton" name="qprogBtn">
+      <property name="text">
+       <string>&amp;Exit</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>579</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="converbtn"/>
+    <addaction name="Ratebtn"/>
+    <addaction name="separator"/>
+    <addaction name="exitbtn"/>
+   </widget>
+   <widget class="QMenu" name="menuHel_p">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="About"/>
+    <addaction name="action_Docs"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuHel_p"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="add">
+   <property name="text">
+    <string>&amp;Add Recipe</string>
+   </property>
+  </action>
+  <action name="Ratebtn">
+   <property name="text">
+    <string>&amp;Rate Recipe</string>
+   </property>
+  </action>
+  <action name="exitbtn">
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+  </action>
+  <action name="converbtn">
+   <property name="text">
+    <string>&amp;Conversion</string>
+   </property>
+  </action>
+  <action name="About">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="action_Docs">
+   <property name="text">
+    <string>&amp;Docs</string>
+   </property>
+  </action>
+  <action name="Add_Ingrediantbtn">
+   <property name="text">
+    <string>Add &amp;Ingrediant</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>5</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>5</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>false</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>false</bool>
+  </property>
+ </designerdata>
+</ui>
